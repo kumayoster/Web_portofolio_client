@@ -1,184 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>English Course Academy</title>
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <style>
-        /* Add any additional styles specific to the English course academy here */
+      /* Add any additional styles specific to the English course academy here */
     </style>
-</head>
+  </head>
 
-<body class="bg-gray-900 text-white">
-    <header class="navbar flex justify-between items-center p-5 shadow-lg" id="navbar">
-        <div class="logo" data-aos="fade-in" data-aos-delay="100" data-aos-duration="800">
-            <a href="" class="text-2xl font-bold transition duration-300 text-white"><span>English</span> Academy</a>
-        </div>
-        <ul class="nav-links flex space-x-5" data-aos="fade-down">
-            <li data-aos="fade-down" data-aos-delay="300" data-aos-duration="900">
-                <a href="#about" class="text-white px-3 py-2 hover:text-gray-300 transition duration-300">About Us</a>
-            </li>
-            <li data-aos="fade-down" data-aos-delay="600" data-aos-duration="1200">
-                <a href="#courses" class="text-white px-3 py-2 hover:text-gray-300 transition duration-300">Courses</a>
-            </li>
-            <li data-aos="fade-down" data-aos-delay="900" data-aos-duration="1500">
-                <a href="#teachers" class="text-white px-3 py-2 hover:text-gray-300 transition duration-300">Our Teachers</a>
-            </li>
-            <li data-aos="fade-down" data-aos-delay="1200" data-aos-duration="1800">
-                <a href="#contact" class="text-white px-3 py-2 hover:text-gray-300 transition duration-300">Contact Us</a>
-            </li>
-        </ul>
-        <div class="burger" id="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
+  <body class="bg-gray-900 text-white">
+    <header
+      class="navbar flex justify-between items-center p-5 shadow-lg"
+      id="navbar"
+    >
+      <div
+        class="logo"
+        data-aos="fade-in"
+        data-aos-delay="100"
+        data-aos-duration="800"
+      >
+        <a href="" class="text-2xl font-bold transition duration-300 text-white"
+          ><span>English</span> Courses</a
+        >
+      </div>
+      <ul class="nav-links flex space-x-5" data-aos="fade-down">
+        <li data-aos="fade-down" data-aos-delay="300" data-aos-duration="900">
+          <a
+            href="#about"
+            class="text-white px-3 py-2 hover:text-gray-300 transition duration-300"
+            >About Us</a
+          >
+        </li>
+        <li data-aos="fade-down" data-aos-delay="600" data-aos-duration="1200">
+          <a
+            href="#courses"
+            class="text-white px-3 py-2 hover:text-gray-300 transition duration-300"
+            >Courses</a
+          >
+        </li>
+        <li data-aos="fade-down" data-aos-delay="1200" data-aos-duration="1800">
+          <a
+            href="#contact"
+            class="text-white px-3 py-2 hover:text-gray-300 transition duration-300"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+      <div class="burger" id="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </header>
 
-    <main class="flex flex-col items-center justify-center min-h-screen" data-aos="fade-up">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Welcome to <span>English Academy</span></h1>
-        <h2 data-aos="fade-in" data-aos-delay="500" data-aos-duration="1200">
-            <a href="#" class="typewrite" data-period="1000" data-type='[
+    <main
+      class="flex flex-col items-center justify-center min-h-screen"
+      data-aos="fade-up"
+    >
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">
+        Welcome to <span>English Courses</span>
+      </h1>
+      <h2 data-aos="fade-in" data-aos-delay="500" data-aos-duration="1200">
+        <a
+          href="#"
+          class="typewrite"
+          data-period="1000"
+          data-type='[
                 "Providing top-notch English courses for all levels.",
                 "Expert teachers dedicated to your language learning journey.",
                 "Flexible courses designed to fit your schedule and needs."
-                ]'><span class="wrap"></span></a>
-        </h2>
+                ]'
+          ><span class="wrap"></span
+        ></a>
+      </h2>
     </main>
 
     <section id="about" class="py-20 bg-black text-white">
-        <h1 class="section-title text-4xl font-bold mb-10 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">About Us</h1>
-        <div class="about-wrap flex flex-col md:flex-row items-center justify-center gap-10" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
-            <div class="about-img p-8 mb-52">
-                <img src="academy.png" alt="Academy Image" class="rounded-full w-52 h-52">
-            </div>
-            <div class="about-desc text-center md:text-left">
-                <p class="mb-4">
-                    Welcome to English Academy, where we provide exceptional English language education for students of all levels. Our mission is to enhance your English proficiency through engaging and interactive lessons.
-                </p>
-                <p class="mb-4">
-                    Our experienced teachers are committed to helping you achieve your language goals, whether you're a beginner or looking to advance your skills.
-                </p>
-                <p class="mb-4">
-                    We offer a variety of courses tailored to meet your needs, including conversational English, business English, and test preparation.
-                </p>
-                <a href="#"><button class="button mt-4">Explore Courses</button></a>
-            </div>
+      <h1
+        class="section-title text-4xl font-bold mb-10 text-center"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1200"
+      >
+        About Us
+      </h1>
+      <div
+        class="about-wrap flex flex-col md:flex-row items-center justify-center gap-10"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1200"
+      >
+        <div class="about-img p-8 mb-52">
+          <img
+            src="academy.png"
+            alt="Academy Image"
+            class="rounded-full w-52 h-52"
+          />
         </div>
+        <div class="about-desc text-center md:text-left">
+          <p class="mb-4">
+            Welcome to English Courses, where we provide exceptional English
+            language education for students of all levels. Our mission is to
+            enhance your English proficiency through engaging and interactive
+            lessons.
+          </p>
+          <p class="mb-4">
+            Our experienced teachers are committed to helping you achieve your
+            language goals, whether you're a beginner or looking to advance your
+            skills.
+          </p>
+          <p class="mb-4">
+            We offer a variety of courses tailored to meet your needs, including
+            conversational English, business English, and test preparation.
+          </p>
+          <a href="#"><button class="button mt-4">Explore Courses</button></a>
+        </div>
+      </div>
     </section>
 
     <section id="courses" class="py-20 bg-black text-white" data-aos="fade-up">
-        <div class="container mx-auto px-6 min-h-screen">
-            <h2 class="text-4xl font-bold mb-5">Our Courses</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                <div class="p-5 bg-gray-800 shadow rounded-lg">
-                    <h3 class="text-2xl font-bold mb-3">Beginner English</h3>
-                    <p>Designed for those new to the English language, focusing on fundamental skills.</p>
-                </div>
-                <div class="p-5 bg-gray-800 shadow rounded-lg">
-                    <h3 class="text-2xl font-bold mb-3">Conversational English</h3>
-                    <p>Improve your speaking and listening skills through practical conversation practice.</p>
-                </div>
-                <div class="p-5 bg-gray-800 shadow rounded-lg">
-                    <h3 class="text-2xl font-bold mb-3">Business English</h3>
-                    <p>Enhance your English for professional settings, including presentations and negotiations.</p>
-                </div>
-            </div>
+      <div class="container mx-auto px-6 min-h-screen">
+        <h2 class="text-4xl font-bold mb-5">Our Courses</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="p-5 bg-gray-800 shadow rounded-lg">
+            <h3 class="text-2xl font-bold mb-3">Beginner English</h3>
+            <p>
+              Designed for those new to the English language, focusing on
+              fundamental skills.
+            </p>
+          </div>
+          <div class="p-5 bg-gray-800 shadow rounded-lg">
+            <h3 class="text-2xl font-bold mb-3">Conversational English</h3>
+            <p>
+              Improve your speaking and listening skills through practical
+              conversation practice.
+            </p>
+          </div>
+          <div class="p-5 bg-gray-800 shadow rounded-lg">
+            <h3 class="text-2xl font-bold mb-3">Business English</h3>
+            <p>
+              Enhance your English for professional settings, including
+              presentations and negotiations.
+            </p>
+          </div>
         </div>
-    </section>
-
-    <section id="teachers" class="py-20 bg-black text-white" data-aos="fade-up">
-        <div class="container mx-auto px-6 min-h-screen">
-            <h2 class="text-4xl font-bold mb-5">Our Teachers</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                <div class="p-5 bg-gray-800 shadow rounded-lg">
-                    <h3 class="text-2xl font-bold mb-3">Teacher 1</h3>
-                    <p>Brief introduction about Teacher 1, including qualifications and expertise.</p>
-                </div>
-                <div class="p-5 bg-gray-800 shadow rounded-lg">
-                    <h3 class="text-2xl font-bold mb-3">Teacher 2</h3>
-                    <p>Brief introduction about Teacher 2, including qualifications and expertise.</p>
-                </div>
-                <div class="p-5 bg-gray-800 shadow rounded-lg">
-                    <h3 class="text-2xl font-bold mb-3">Teacher 3</h3>
-                    <p>Brief introduction about Teacher 3, including qualifications and expertise.</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
     <section id="contact" class="py-20 bg-black text-white" data-aos="fade-up">
-        <div class="container mx-auto px-6 min-h-screen">
-            <h2 class="text-4xl font-bold mb-5">Contact Us</h2>
-            <p>If you have any questions or would like to enroll in our courses, feel free to email us at <a href="mailto:info@englishacademy.com" class="text-blue-400">info@englishacademy.com</a>.</p>
-            <a href="mailto:info@englishacademy.com">Email: info@englishacademy.com</a>
-        <br>
+      <div class="container mx-auto px-6 min-h-screen">
+        <h2 class="text-4xl font-bold mb-5">Contact Us</h2>
+        <p>
+          If you have any questions or would like to enroll in our courses, feel
+          free to email us at
+          <a href="mailto:info@englishcourses.com" class="text-blue-400"
+            >info@englishcourses.com</a
+          >.
+        </p>
+        <a href="mailto:info@englishcourses.com"
+          >Email: info@englishcourses.com</a
+        >
+        <br />
         <a href="https://wa.me/+6282116341828">Phone: +62 821 1634 1828</a>
-    </div>
-        </div>
+      </div>
     </section>
-    
-
 
     <footer class="copyright py-4 bg-black text-white text-center">
-        <p>&copy; 2024 English Academy. All rights reserved.</p>
+      <p>&copy; 2024 English Courses. All rights reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
 
-        const typewrite = document.querySelector('.typewrite');
-        const txtElement = typewrite.getAttribute('data-type');
-        const period = typewrite.getAttribute('data-period');
-        const data = JSON.parse(txtElement);
-        let loopNum = 0;
-        let txt = '';
-        let isDeleting = false;
+      const typewrite = document.querySelector(".typewrite");
+      const txtElement = typewrite.getAttribute("data-type");
+      const period = typewrite.getAttribute("data-period");
+      const data = JSON.parse(txtElement);
+      let loopNum = 0;
+      let txt = "";
+      let isDeleting = false;
 
-        function type() {
-            const i = loopNum % data.length;
-            const fullTxt = data[i];
+      function type() {
+        const i = loopNum % data.length;
+        const fullTxt = data[i];
 
-            if (isDeleting) {
-                txt = fullTxt.substring(0, txt.length - 1);
-            } else {
-                txt = fullTxt.substring(0, txt.length + 1);
-            }
-
-            document.querySelector('.wrap').innerHTML = txt;
-
-            let delta = 150 - Math.random() * 200;
-
-            if (isDeleting) {
-                delta /= 2;
-            }
-
-            if (!isDeleting && txt === fullTxt) {
-                delta = period;
-                isDeleting = true;
-            } else if (isDeleting && txt === '') {
-                isDeleting = false;
-                loopNum++;
-                delta = 500;
-            }
-
-            setTimeout(type, delta);
+        if (isDeleting) {
+          txt = fullTxt.substring(0, txt.length - 1);
+        } else {
+          txt = fullTxt.substring(0, txt.length + 1);
         }
 
-        document.addEventListener('DOMContentLoaded', () => {
-            if (typewrite) {
-                setTimeout(() => {
-                    type();
-                }, 500);
-            }
-        });
+        document.querySelector(".wrap").innerHTML = txt;
+
+        let delta = 150 - Math.random() * 200;
+
+        if (isDeleting) {
+          delta /= 2;
+        }
+
+        if (!isDeleting && txt === fullTxt) {
+          delta = period;
+          isDeleting = true;
+        } else if (isDeleting && txt === "") {
+          isDeleting = false;
+          loopNum++;
+          delta = 500;
+        }
+
+        setTimeout(type, delta);
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        if (typewrite) {
+          setTimeout(() => {
+            type();
+          }, 500);
+        }
+      });
     </script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
