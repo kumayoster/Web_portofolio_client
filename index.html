@@ -182,54 +182,77 @@
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
-
-      const typewrite = document.querySelector(".typewrite");
-      const txtElement = typewrite.getAttribute("data-type");
-      const period = typewrite.getAttribute("data-period");
-      const data = JSON.parse(txtElement);
-      let loopNum = 0;
-      let txt = "";
-      let isDeleting = false;
-
-      function type() {
-        const i = loopNum % data.length;
-        const fullTxt = data[i];
-
-        if (isDeleting) {
-          txt = fullTxt.substring(0, txt.length - 1);
-        } else {
-          txt = fullTxt.substring(0, txt.length + 1);
-        }
-
-        document.querySelector(".wrap").innerHTML = txt;
-
-        let delta = 150 - Math.random() * 200;
-
-        if (isDeleting) {
-          delta /= 2;
-        }
-
-        if (!isDeleting && txt === fullTxt) {
-          delta = period;
-          isDeleting = true;
-        } else if (isDeleting && txt === "") {
-          isDeleting = false;
-          loopNum++;
-          delta = 500;
-        }
-
-        setTimeout(type, delta);
-      }
-
       document.addEventListener("DOMContentLoaded", () => {
+        AOS.init();
+
+        // Typewriter effect
+        const typewrite = document.querySelector(".typewrite");
+        const txtElement = typewrite.getAttribute("data-type");
+        const period = typewrite.getAttribute("data-period");
+        const data = JSON.parse(txtElement);
+        let loopNum = 0;
+        let txt = "";
+        let isDeleting = false;
+
+        function type() {
+          const i = loopNum % data.length;
+          const fullTxt = data[i];
+
+          if (isDeleting) {
+            txt = fullTxt.substring(0, txt.length - 1);
+          } else {
+            txt = fullTxt.substring(0, txt.length + 1);
+          }
+
+          document.querySelector(".wrap").innerHTML = txt;
+
+          let delta = 150 - Math.random() * 200;
+
+          if (isDeleting) {
+            delta /= 2;
+          }
+
+          if (!isDeleting && txt === fullTxt) {
+            delta = period;
+            isDeleting = true;
+          } else if (isDeleting && txt === "") {
+            isDeleting = false;
+            loopNum++;
+            delta = 500;
+          }
+
+          setTimeout(type, delta);
+        }
+
         if (typewrite) {
           setTimeout(() => {
             type();
           }, 500);
         }
+
+        // Navbar scroll behavior
+        const navbar = document.getElementById("navbar");
+        const burger = document.getElementById("burger");
+        const navLinks = document.querySelectorAll(".nav-links a");
+
+        burger.addEventListener("click", () => {
+          navbar.classList.toggle("open");
+        });
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            navbar.classList.remove("open");
+          });
+        });
+
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+          } else {
+            navbar.classList.remove("scrolled");
+          }
+        });
       });
     </script>
-    <script src="script.js"></script>
   </body>
 </html>
